@@ -1,0 +1,16 @@
+body {
+  background-color: #1a0630;
+}
+
+h1 {
+  color: #A5DB6D;
+  text-align: center;
+}
+.featured-text {
+  color: orange;
+  font-size: 22px;
+}
+
+p {
+  color: white;
+}

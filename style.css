@@ -1,0 +1,106 @@
+body {
+  background-color: oklab(61.00299999999999% 0.13479 -0.20198);
+  font-family: "Gothic A1", sans-serif;
+  margin: 0;
+}
+
+header {
+  background-color: hsl(269, 100%, 49%);
+  padding: 20px;
+  text-align: center;
+}
+
+img {
+  display: block;
+  max-width: 90%;
+  height: auto;
+  margin: 30px auto;
+  border-radius: 15px;
+  box-shadow: 0 0 30px rgba(249, 0, 240, 0.55);
+}
+
+.glow {
+    box-shadow: 0 0 50px #ffffff,
+                0 0 80px #c77dff,
+                0 0 120px #9d4edd;
+    transition: all .4s ease;
+}
+
+img {
+    transition: transform .4s ease;
+}
+
+img:hover {
+    transform: scale(1.08);
+}
+
+h1 {
+  font-size: 28px;
+  font-weight: 900;
+  font-style: italic;
+  font-variant: small-caps;
+  color: hwb(330 96% 3%);
+  padding: 20px;
+  border: 4px solid hsl(311, 98%, 56%);
+  margin: 30px;
+}
+
+button {
+  background-color: hwb(311 29% 11%);
+  color: white;
+  border: none;
+  padding: 30px 30px;
+  font-size: 26px;
+  cursor: pointer;
+}
+
+.highlight {
+  color: hsl(302, 68%, 10%);
+  font-size: 24px;
+  font-weight: bold;
+  font-style: italic;
+  font-variant: small-caps;
+  text-align: center;
+}
+
+h2 {
+  font-size: 24px;
+  font-weight: bold;
+  font-style: italic;
+  font-variant: small-caps;
+  color: hsl(270, 89%, 33%);
+}
+
+h3 {
+  font-size: 18px;
+  font-weight: bold;
+  font-style: italic;
+  font-variant: small-caps;
+  color: #780396;
+}
+
+p {
+  margin: 15px;
+}
+
+#main-content {
+  font-size: 20px;
+  font-weight: bold;
+  font-style: italic;
+  font-variant: small-caps;
+  color: hsl(325, 88%, 53%);
+}
+
+nav {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 15px;
+}
+
+footer {
+  background-color: #1a0630;
+  padding: 10px;
+  text-align: center;
+  color: hsl(277, 96%, 30%);
+}

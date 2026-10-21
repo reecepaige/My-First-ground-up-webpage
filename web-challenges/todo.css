@@ -1,0 +1,68 @@
+.container {
+  max-width: 500px;
+  margin: 0 auto;
+  padding: 10px;
+  background-color: #7a0254;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+input[type="text"] {
+  width: 50%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid hsl(194, 97%, 64%);
+  border-radius: 4px;
+}
+
+button[type="submit"] {
+  width: 50%;
+  padding: 10px;
+  background-color: lab(15.84% 36.73 -42.31);
+  color: hsl(321, 98%, 48%);
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  text-align: center;
+}
+
+button:hover {
+  background-color: hwb(196 18% 5%);
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+  text-align: left;
+  color: lch(55.17% 87.48 350.35);
+
+}
+
+.todo-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  border-bottom: 1px solid hsl(204, 95%, 60%);
+}
+
+header h1 {
+  color: hsl(156, 15%, 84%);
+  text-align: center;
+  padding: 20px;
+  background-color: hsl(269, 100%, 49%);
+}
+
+form {
+  margin-bottom: 20px;
+  text-align: left;
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+  color: lab(95.84% 1.69 -0.5);
+}
+
+
+

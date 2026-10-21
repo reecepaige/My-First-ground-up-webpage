@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>My To-Do List</title>
+    <link rel="stylesheet" href="todo.css">
+
+    <style>
+      .done {
+        text-decoration: line-through;
+        color: gray;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>My To-Do List</h1>
+  <div class="container">
+    
+   
+<form>
+  <label for="task">Add a task:</label>
+    <input type="text" id="task" name="todo">
+    <button type="submit">Add</button>
+</form>
+    <ul></ul>
+    </div>
+<!-- your form and list are here -->
+
+  <script>
+    const form = document.querySelector("form");
+
+form.addEventListener("submit", function(event) {
+    event.preventDefault();
+
+    const input = document.getElementById("task");
+
+const taskText = input.value;
+const li = document.createElement("li");
+li.textContent = taskText;
+
+const deleteBtn = document.createElement("button");
+deleteBtn.textContent = "🗑";
+
+const reminderInput = document.createElement("input");
+reminderInput.type = "number";
+reminderInput.placeholder = "min";
+
+const reminderBtn = document.createElement("button");
+reminderBtn.textContent = "⏰";
+
+    // Delete handler — closes here
+    deleteBtn.addEventListener("click", function() {
+        li.remove();
+    });
+    reminderBtn.addEventListener("click", function() {
+        const minutes = parseInt(reminderInput.value);
+        if (!isNaN(minutes) && minutes > 0) {
+            setTimeout(function() {
+                alert("Times up for: " + taskText);
+            }, minutes * 60 * 1000);
+        }
+    });
+       
+    // Everything below runs when the task is created
+    li.appendChild(deleteBtn);
+    li.appendChild(reminderInput);
+    li.appendChild(reminderBtn);
+    document.querySelector("ul").appendChild(li);
+    input.value = "";
+
+    li.addEventListener("click", function() {
+        li.classList.toggle("done");
+    });
+});
+  </script>
+  </body>
+</html>
